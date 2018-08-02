@@ -12,9 +12,8 @@ module.exports.ls = () => {
 };
 
 module.exports.touch = () => {
-    fs.writeFile('message.txt', 'utf8', (err) => {
+    fs.writeFile('message.txt', 'Success!', (err) => {
         if (err) throw err;
-
         console.log('file created')
     });
 };
